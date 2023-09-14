@@ -25,3 +25,10 @@ func add(a int, b int) int {
 func product(a int, b int) int {
 	return a * b;
 }
+
+// interesting feature of functions in Go -> we can return multiple values from a function. this is called Multiple Return values. 
+// lets try and write a maths function that will return addition, subtraction, multiplication and division of two numbers.
+
+func maths(a int, b int) (int, int, int, int){
+	return a+b, a-b, a*b, a/b;
+} 
